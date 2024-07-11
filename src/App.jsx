@@ -5,12 +5,13 @@ import Signup from "./pages/Signup";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
+import NotFound from "./components/NotFound";
 
 const App = () => {
-
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
+      <h1 className="text-3xl font-semibold bg-blue-400 p-4 text-center">Todo App</h1>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
@@ -22,6 +23,7 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

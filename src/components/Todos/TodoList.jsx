@@ -56,7 +56,7 @@ const TodoList = () => {
       >
         Add Todo
       </button>
-      <table className="min-w-full bg-white">
+      <table className="min-w-full text-[8px] sm:text-lg bg-white">
         <thead>
           <tr>
             <th className="border px-4 py-2">#</th>
@@ -66,7 +66,7 @@ const TodoList = () => {
             <th className="border px-4 py-2">Status</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="text-center">
           {todos.map((todo, index) => (
             <TodoItem
               key={todo.id}

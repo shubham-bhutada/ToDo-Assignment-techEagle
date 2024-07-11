@@ -12,7 +12,7 @@ const TodoDetails = ({ todo }) => {
 
   return (
     <div>
-      <h3 className="text-xl mb-2">Activity Details</h3>
+      <h3 className="text-xl mb-2">ToDo Details</h3>
       <p>
         <strong>Name:</strong> {todo.name}
       </p>
